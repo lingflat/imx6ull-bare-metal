@@ -1,9 +1,6 @@
 #ifndef __CC_H
 #define __CC_H
 
-/*
- * 自定义一些数据类型供库文件使用
- */
 #define     __I     volatile 
 #define     __O     volatile 
 #define     __IO    volatile

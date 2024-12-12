@@ -1,11 +1,7 @@
 #ifndef _FSL_COMMON_H_
 #define _FSL_COMMON_H_
 
-#include "cc.h"				/* cc.h为自行添加的文件 */
-/*!
- * @addtogroup ksdk_common
- * @{
- */
+#include "cc.h"	
 
 /*******************************************************************************
  * Definitions

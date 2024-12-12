@@ -13,8 +13,8 @@ objs := ./src/start.o \
         ./src/led.o \
         ./src/delay.o 
 
+#${LD} -T imx6ull.ld -o imx6ull.elf $^     #请查明$^ 到底是啥意思为什么用 $^ 就链接失败
 imx6ull.bin: $(objs)
-	#${LD} -T imx6ull.ld -o imx6ull.elf $^     #请查明$^ 到底是啥意思为什么用 $^ 就链接失败
 	${LD} -T imx6ull.ld -o imx6ull.elf $(objs)
 	${OBJCOPY} -O binary -S imx6ull.elf $@
 	${OBJDUMP} -D -m arm imx6ull.elf > imx6ull.dis
